@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 sound_file = sys.argv[1]
 y, sr = librosa.load(sound_file)
 
-# スペクトログラムの計算
+# spectrogram(スペクトログラム)の計算
 S = librosa.stft(y)
 S_db = librosa.amplitude_to_db(abs(S))
 
